@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "ShowMessage";
+}
+
+<h1 class="title is-1">@ViewData["Message"]</h1>
+<form method="post" action="~/Hello/SearchById">
+    <div class="form-group">
+        <label for="id">Enter you id</label>
+        <input type="text" class="form-control" id="id" name="id">
+    </div>   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

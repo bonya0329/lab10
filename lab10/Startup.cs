@@ -31,6 +31,11 @@ namespace lab10
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "messages",
+                    template: "say/{**message}",
+                    defaults: new { controller = "Hello", action = "ShowMessage" });
+
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Hello}/{action=Index}/{id?}");
             });
