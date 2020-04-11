@@ -23,7 +23,7 @@ namespace lab10.Controllers
             string value = RandomString(s);
             
             people.Add(value, new Person() { Name = name , Data = data, Group = group});
-            return $"Hello! {name} + your id = {value} go to /say";           
+            return $"Hello! {name} + your id = {value} go to /say ";           
 
         }
 
